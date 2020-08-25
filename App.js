@@ -24,27 +24,22 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Body from './components/Body';
+import Maps from './components/Maps';
 
-export class App extends Component {
+const Stack = createStackNavigator();
 
-  render(){
-    return (
-      <View style={styles.container}>
-        <Body/>
-      </View>
-    );
-  }   
+function App() {
+  return (
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Body">
+          <Stack.Screen name="Body" component={Body} />
+          <Stack.Screen name="Maps" component={Maps} />
+        </Stack.Navigator>
+      </NavigationContainer>
+  );
 }
+
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-});
