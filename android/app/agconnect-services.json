@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"2640094000000291585",
+		"product_id":"736430079244620394",
+		"client_id":"442507512785142784",
+		"client_secret":"4C99D37CF4A0CB9390F7F994D0D3D7EA427F4F3D127F5BF8B87DC72F088463A6",
+		"app_id":"102826165",
+		"package_name":"com.identifyhms",
+		"api_key":"CgB6e3x9cT597rClD7pdLd68dA74k5xE2RI62B7cBVL8VzzoURIobLyeYfQZCkDMjITfyqyHBCuRaDGllPwq7joG"
+	},
+	"configuration_version":"1.0"
+}
