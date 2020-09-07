@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  Image,
-  Button,
-  ToastAndroid,
-} from "react-native";
+import {Button, Image, SafeAreaView, ScrollView, StyleSheet, Text, ToastAndroid, View,} from "react-native";
 
 import {Colors} from "react-native/Libraries/NewAppScreen";
 
@@ -56,25 +47,6 @@ const Home = ({navigation}) => {
               />
             </View>
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="HMS Location"
-                onPress={() => {
-                  navigation.navigate("Location");
-                }}
-                style={styles.appButton}
-              />
-            </View>
-
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="Huawei Map"
-                onPress={() => {
-                  navigation.navigate("Map");
-                }}
-                style={styles.appButton}
-              />
-            </View>
 
             <View style={styles.appButtonStyle}>
               <Button
@@ -86,53 +58,53 @@ const Home = ({navigation}) => {
               />
             </View>
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="Huawei Analytics"
-                onPress={() => {
-                  navigation.navigate("Analytics");
-                }}
-                style={styles.appButton}
-              />
-            </View>
+            {/*<View style={styles.appButtonStyle}>*/}
+            {/*  <Button*/}
+            {/*    title="Huawei Analytics"*/}
+            {/*    onPress={() => {*/}
+            {/*      navigation.navigate("Analytics");*/}
+            {/*    }}*/}
+            {/*    style={styles.appButton}*/}
+            {/*  />*/}
+            {/*</View>*/}
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="Huawei Account"
-                onPress={() => {
-                  navigation.navigate("Account");
-                }}
-                style={styles.appButton}
-              />
-            </View>
+            {/*<View style={styles.appButtonStyle}>*/}
+            {/*  <Button*/}
+            {/*    title="Huawei Account"*/}
+            {/*    onPress={() => {*/}
+            {/*      navigation.navigate("Account");*/}
+            {/*    }}*/}
+            {/*    style={styles.appButton}*/}
+            {/*  />*/}
+            {/*</View>*/}
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="Huawei Ads"
-                onPress={() => {
-                  navigation.navigate("Ads");
-                }}
-                style={styles.appButton}
-              />
-            </View>
+            {/*<View style={styles.appButtonStyle}>*/}
+            {/*  <Button*/}
+            {/*    title="Huawei Ads"*/}
+            {/*    onPress={() => {*/}
+            {/*      navigation.navigate("Ads");*/}
+            {/*    }}*/}
+            {/*    style={styles.appButton}*/}
+            {/*  />*/}
+            {/*</View>*/}
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="HMS Site Kit"
-                onPress={() => {
-                  navigation.navigate("Site");
-                }}
-                style={styles.appButton}
-              />
-            </View>
+            {/*<View style={styles.appButtonStyle}>*/}
+            {/*  <Button*/}
+            {/*    title="HMS Site Kit"*/}
+            {/*    onPress={() => {*/}
+            {/*      navigation.navigate("Site");*/}
+            {/*    }}*/}
+            {/*    style={styles.appButton}*/}
+            {/*  />*/}
+            {/*</View>*/}
 
-            <View style={styles.appButtonStyle}>
-              <Button
-                title="HMS Scan Kit"
-                onPress={commingSoon}
-                style={styles.appButton}
-              />
-            </View>
+            {/*<View style={styles.appButtonStyle}>*/}
+            {/*  <Button*/}
+            {/*    title="HMS Scan Kit"*/}
+            {/*    onPress={commingSoon}*/}
+            {/*    style={styles.appButton}*/}
+            {/*  />*/}
+            {/*</View>*/}
           </View>
         </ScrollView>
       </SafeAreaView>
