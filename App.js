@@ -7,46 +7,30 @@
  */
 
 import React from "react";
-import {View} from 'react-native';
 import {createStackNavigator} from "react-navigation-stack";
 import {createAppContainer} from "react-navigation";
 
 import Home from "./src/screens/Home";
 import Check from "./src/screens/Check";
-import Map from "./src/screens/Map";
-import Push from "./src/screens/Push";
+
 
 const AppNavigator = createStackNavigator(
-  {
-    Home: {
-      screen: Home,
-      navigationOptions: {
-        headerTitle: "React Native HMS Kits",
+    {
+      Home: {
+        screen: Home,
+        navigationOptions: {
+          headerTitle: "React Native HMS Kits",
+        },
+        path: "Home",
       },
-      path: "Home",
-    },
-    Check: {
-      screen: Check,
-      navigationOptions: {
-        headerTitle: "HMS / GMS Check",
-      },
-      path: "Check",
-    },
-    Map: {
-      screen: Map,
-      navigationOptions: {
-        headerTitle: "Huawei Map",
-      },
-      path: "Map",
-    },
-    Push: {
-      screen: Push,
-      navigationOptions: {
-        headerTitle: "Huawei Push",
-      },
-      path: "Push",
-    },
-  }
+      Check: {
+        screen: Check,
+        navigationOptions: {
+          headerTitle: "HMS / GMS Check",
+        },
+        path: "Check",
+      }
+    }
 );
 
 const AppContainer = createAppContainer(AppNavigator);
