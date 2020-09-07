@@ -21,8 +21,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'huaweim1' do
-  # Pods for huaweim1
+target 'hmsmapkit' do
+  # Pods for hmsmapkit
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -54,7 +54,7 @@ target 'huaweim1' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'huaweim1Tests' do
+  target 'hmsmapkitTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -71,10 +71,10 @@ target 'huaweim1' do
   end
 end
 
-target 'huaweim1-tvOS' do
-  # Pods for huaweim1-tvOS
+target 'hmsmapkit-tvOS' do
+  # Pods for hmsmapkit-tvOS
 
-  target 'huaweim1-tvOSTests' do
+  target 'hmsmapkit-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

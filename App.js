@@ -6,45 +6,54 @@
  * @flow strict-local
  */
 
-import React,{Component} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  Platform
-} from 'react-native';
+import React from "react";
+import {createStackNavigator} from "react-navigation-stack";
+import {createAppContainer} from "react-navigation";
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from "react-native/Libraries/NewAppScreen";
 
-import Body from './components/Body';
+import Home from "./screens/Home";
+import Check from "./screens/Check";
+import Map from "./screens/Map";
+import Push from "./screens/Push";
 
-export class App extends Component {
+const AppNavigator = createStackNavigator(
+  {
+    Home: {
+      screen: Home,
+      navigationOptions: {
+        headerTitle: "React Native HMS Kits",
+      },
+      path: "Home",
+    },
+    Check: {
+      screen: Check,
+      navigationOptions: {
+        headerTitle: "HMS / GMS Check",
+      },
+      path: "Check",
+    },
+    Map: {
+      screen: Map,
+      navigationOptions: {
+        headerTitle: "Huawei Map",
+      },
+      path: "Map",
+    },
+    Push: {
+      screen: Push,
+      navigationOptions: {
+        headerTitle: "Huawei Push",
+      },
+      path: "Push",
+    },
+  }
+);
 
-  render(){
-    return (
-      <View style={styles.container}>
-        <Body/>
-      </View>
-    );
-  }   
-}
+const AppContainer = createAppContainer(AppNavigator);
+
+const App = () => {
+  return <AppContainer />;
+};
+
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-});
