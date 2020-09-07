@@ -7,15 +7,14 @@
  */
 
 import React from "react";
+import {View} from 'react-native';
 import {createStackNavigator} from "react-navigation-stack";
 import {createAppContainer} from "react-navigation";
 
-import {Colors} from "react-native/Libraries/NewAppScreen";
-
-import Home from "./screens/Home";
-import Check from "./screens/Check";
-import Map from "./screens/Map";
-import Push from "./screens/Push";
+import Home from "./src/screens/Home";
+import Check from "./src/screens/Check";
+import Map from "./src/screens/Map";
+import Push from "./src/screens/Push";
 
 const AppNavigator = createStackNavigator(
   {
