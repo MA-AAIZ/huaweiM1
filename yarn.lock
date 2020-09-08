@@ -709,6 +709,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@hmscore/react-native-hms-map@^5.0.1-300":
+  version "5.0.1-300"
+  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-map/-/react-native-hms-map-5.0.1-300.tgz#e0f6f514754ab26aa0e9ca8ab4614d37a213af4d"
+  integrity sha512-pvHRk+HrnAOMBOduZt/Pl2iDlwxPrB8Ajbx84d0bSf8KGJN8KYUw6qR21LCuyya+cKdPfp6Vq/JkwA1S6Fqlyg==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
