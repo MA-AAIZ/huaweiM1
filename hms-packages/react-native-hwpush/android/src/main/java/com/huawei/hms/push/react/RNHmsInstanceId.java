@@ -56,7 +56,7 @@ public class RNHmsInstanceId extends ReactContextBaseJavaModule {
 
 
     @ReactMethod
-    public void getToken(Callback callBack) {
+    public void getToken(Callback callBack) { 
         try {
             String appId = AGConnectServicesConfig.fromContext(mContext).getString("client/app_id");
             String token = HmsInstanceId.getInstance(ActivityUtils.getRealActivity(getCurrentActivity(), mContext)).getToken(appId, "HCM");

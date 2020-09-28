@@ -1,4 +1,8 @@
 {
+	"agcgw":{
+		"backurl":"connect-dre.dbankcloud.cn",
+		"url":"connect-dre.hispace.hicloud.com"
+	},
 	"client":{
 		"cp_id":"2640094000000291585",
 		"product_id":"736430079244620581",
@@ -8,5 +12,19 @@
 		"package_name":"com.hmsmapkit",
 		"api_key":"CgB6e3x95jBabFXugmRQgIE5sAj4TXiYZ4Fd8DZb8V4GEf7kOMzXgrk5ejrpJFNsovtIPJ8KO08ixnlEFy04yYjA"
 	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"cloudstorage":{
+			"storage_url":"https://ops-dre.agcstorage.link"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+		}
+	},
+	"region":"DE",
 	"configuration_version":"1.0"
 }
