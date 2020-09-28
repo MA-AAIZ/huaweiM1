@@ -12,6 +12,8 @@ import {createAppContainer} from "react-navigation";
 
 import Home from "./src/screens/Home";
 import Check from "./src/screens/Check";
+import Map from "./src/screens/Map";
+import Push from "./src/screens/Push";
 
 
 const AppNavigator = createStackNavigator(
@@ -29,14 +31,28 @@ const AppNavigator = createStackNavigator(
           headerTitle: "HMS / GMS Check",
         },
         path: "Check",
-      }
+      },
+      Map: {
+        screen: Map,
+        navigationOptions: {
+          headerTitle: "HMS Map",
+        },
+        path: "Map",
+      },
+      Push: {
+        screen: Push,
+        navigationOptions: {
+          headerTitle: "HMS Push",
+        },
+        path: "Push",
+      },
     }
 );
 
 const AppContainer = createAppContainer(AppNavigator);
 
 const App = () => {
-  return <AppContainer />;
+  return <AppContainer/>;
 };
 
 export default App;

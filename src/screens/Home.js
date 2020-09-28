@@ -58,6 +58,26 @@ const Home = ({navigation}) => {
               />
             </View>
 
+            <View style={styles.appButtonStyle}>
+              <Button
+                title="HMS Map"
+                onPress={() => {
+                  navigation.navigate("Map");
+                }}
+                style={styles.appButton}
+              />
+            </View>
+
+            <View style={styles.appButtonStyle}>
+              <Button
+                title="HMS Push"
+                onPress={() => {
+                  navigation.navigate("Push");
+                }}
+                style={styles.appButton}
+              />
+            </View>
+
             {/*<View style={styles.appButtonStyle}>*/}
             {/*  <Button*/}
             {/*    title="Huawei Analytics"*/}
