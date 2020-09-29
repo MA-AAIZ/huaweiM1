@@ -75,6 +75,7 @@ export const styles = StyleSheet.create({
   },
 
   containerShowResultMsg: {
+    flex:1,
     flexDirection: "row",
     // marginTop: 10,
   },

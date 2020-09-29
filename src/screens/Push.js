@@ -3,6 +3,7 @@ import {
   NativeEventEmitter,
   NativeModules,
   View,
+  Clipboard,
   Text,
   ScrollView,
   TouchableHighlight,
@@ -395,10 +396,12 @@ export default class Push extends Component {
       let msg = "[spend " + spendTime + "ms]";
 
       if (result == RNErrorEnum.SUCCESS) {
-        msg = msg + "getToken result:" + "\n";
+        msg =  token +"\n";
+        Clipboard.setString(token)
       } else {
         msg = msg + "getToken exception,error: " + result + "\n";
       }
+      this.setShowMsgState(msg);
     });
   }
 
@@ -555,6 +558,9 @@ export default class Push extends Component {
                 <Text>{this.state.receiveContent}</Text>
               )}
             </ScrollView>
+          </View>
+          <View style={{flex:1}}>
+            <Text>{this.state.receiveContent}</Text>
           </View>
 
           <View style={styles.sectionContainer}>
